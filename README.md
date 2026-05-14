@@ -107,6 +107,16 @@ Both models receive the same control inputs. Residual signals are calculated as 
 
 The developed framework achieved approximately 94% classification accuracy for the tested simulation scenarios. Stator resistance drift was classified clearly, while the main difficulty occurred between healthy operation and d-axis inductance mismatch. This behavior was linked to the closed-loop masking effect caused by the FOC controller.
 
+The figures below show two representative results from the simulation study.
+
+### Residual Response under Stator Resistance Drift
+
+![Rs residual sweep](figures/thesis_rs_residual_sweep.png)
+
+### Closed-Loop Masking Effect for d-Axis Inductance Mismatch
+
+![Closed-loop masking effect](figures/thesis_masking_effect.png)
+
 ## Notes
 
 This project is simulation-based and does not include physical PMSM hardware validation. The framework is intended as a research prototype for digital twin-based PMSM fault monitoring and can be extended with real experimental data, additional fault types, and more advanced observer-based detection methods.
